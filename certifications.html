@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certifications | Pooja A M</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .cert-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .cert-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            border: 1px solid #eee;
+            transition: var(--transition);
+        }
+        
+        .cert-card:hover {
+            transform: translateY(-10px) rotate(1deg);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+        }
+        
+        .cert-preview {
+            height: 200px;
+            background: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 2px solid var(--primary-color);
+        }
+        
+        .cert-preview i {
+            font-size: 3.5rem;
+            color: var(--accent-color);
+            opacity: 0.3;
+        }
+        
+        .cert-details {
+            padding: 1.5rem;
+            text-align: center;
+        }
+        
+        .cert-details h3 {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .cert-details p {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            margin-bottom: 1rem;
+        }
+        
+        .placeholder-note {
+            background: var(--primary-light);
+            padding: 2rem;
+            border-radius: 20px;
+            text-align: center;
+            margin-bottom: 3rem;
+            border: 2px dashed var(--accent-color);
+        }
+        
+        .placeholder-note i {
+            font-size: 2rem;
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">POOJA<span>.AM</span></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="certifications.html" class="active">Certifications</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1 class="section-title reveal">Certifications</h1>
+            
+            <div class="placeholder-note reveal">
+                <i class="fas fa-certificate"></i>
+                <h3>New Certificates Coming Soon!</h3>
+                <p>I am currently pursuing several professional certifications in Java and Python. They will be uploaded here shortly.</p>
+            </div>
+
+            <div class="cert-grid">
+                <!-- Cert 1 -->
+                <div class="cert-card reveal">
+                    <div class="cert-preview">
+                        <i class="fas fa-file-contract"></i>
+                    </div>
+                    <div class="cert-details">
+                        <h3>Java Fundamentals</h3>
+                        <p>Issued by: Online Learning Platform</p>
+                        <a href="#" class="btn btn-outline btn-small">View Certificate</a>
+                    </div>
+                </div>
+
+                <!-- Cert 2 -->
+                <div class="cert-card reveal">
+                    <div class="cert-preview">
+                        <i class="fas fa-file-contract"></i>
+                    </div>
+                    <div class="cert-details">
+                        <h3>Python for Beginners</h3>
+                        <p>Issued by: Tech Academy</p>
+                        <a href="#" class="btn btn-outline btn-small">View Certificate</a>
+                    </div>
+                </div>
+
+                <!-- Cert 3 -->
+                <div class="cert-card reveal">
+                    <div class="cert-preview">
+                        <i class="fas fa-file-contract"></i>
+                    </div>
+                    <div class="cert-details">
+                        <h3>Web Development Basics</h3>
+                        <p>Issued by: Code Camp</p>
+                        <a href="#" class="btn btn-outline btn-small">View Certificate</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="copyright">
+            &copy; 2026 Pooja A M. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
